@@ -7,6 +7,7 @@ A ComfyUI extension for generating storyboard panels and keyframe sequences for 
 The node outputs decoded images that can be reviewed, refined, and used as visual guidance for later LTX Video generation stages.
 
 ---
+![Workflow](images/preview.png)
 
 ## Features
 
