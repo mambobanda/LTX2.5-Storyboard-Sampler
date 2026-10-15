@@ -44,14 +44,6 @@ Stage-One storyboard generation node.
 
 ---
 
-## Modes
-
-### lowfps_clip
-
-Generates storyboard panels using low-frame-rate video conditioning.
-
-Useful for creating a sparse sequence of major visual beats while maintaining stronger temporal consistency than independent generation.
-
 Recommended for:
 
 - Storyboarding video scenes
@@ -59,51 +51,6 @@ Recommended for:
 - Establishing major compositions
 
 ---
-
-### sequential
-
-Generates each panel from the previous panel.
-
-This mode intentionally accumulates changes over time.
-
-**Drift is expected and is part of the design.**
-
-Useful for:
-
-- Character evolution
-- Progressive transformations
-- Environmental transitions
-- Motion and progression studies
-
----
-
-### independent_from_reference
-
-Generates each storyboard panel independently using the supplied reference image and per-line prompts.
-
-Each prompt line becomes its own storyboard panel while retaining reference-image guidance.
-
-Useful for:
-
-- Shot lists
-- Comics
-- Storyboards
-- Consistent character design
-- Scene exploration
-
----
-
-### strided_positions
-
-Experimental storyboard generation mode.
-
-Uses temporal conditioning derived from:
-
-```text
-frame_rate = fps / stride
-```
-
-Rather than generating strictly sequential frames, the node conditions on temporally separated positions along an implied timeline.
 
 Useful for:
 
@@ -229,12 +176,6 @@ Restart ComfyUI.
 - `independent_from_reference` generates panels independently.
 - `strided_positions` is experimental and may evolve in future releases.
 - Storyboard outputs are decoded images rather than latent representations.
-
----
-
-## Credits
-
-Created by Mambo for the ComfyUI and LTX Video community.
 
 ---
 
