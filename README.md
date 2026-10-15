@@ -1,6 +1,6 @@
 # LTX 2.5 Storyboard Strided
 
-A ComfyUI extension for generating storyboard panels and keyframe sequences for LTX Video 2.5 workflows.
+A ComfyUI extension for generating storyboard panels and keyframe sequences for LTX Video 2.5 workflows. Very fast compared to generating a video of equal length.
 
 `LTX25StoryboardStrided` is designed as a Stage-One storyboard planning node. It generates a sequence of storyboard panels from text prompts before video generation, allowing creators to establish scene progression, composition, pacing, and visual continuity.
 
